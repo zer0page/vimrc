@@ -81,8 +81,17 @@ set nocompatible
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
+"===============
+"Base Bundle
 Bundle 'gmarik/vundle'
+"===============
+"Everything else
+"
+"========
+"Themes
+Bundle 'flazz/vim-colorschemes'
+Bundle 'junegunn/seoul256.vim'
+colors seoul256
 
 filetype plugin indent on
 
