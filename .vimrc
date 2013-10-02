@@ -42,6 +42,7 @@ set mat=2
 syntax enable
 set encoding=utf8
 set ffs=unix,dos,mac
+set t_Co=256
 
 "=============
 "backup
