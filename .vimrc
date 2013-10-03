@@ -144,6 +144,18 @@ let g:EasyMotion_leader_key = '<Leader><Leader>'
 Bundle 'scrooloose/nerdtree'
 noremap <Leader>n :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+"===
+"Fuzzy file finder
+Bundle 'kien/ctrlp.vim'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|pyc|swo|swp|zip)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 "==================
 "some other crap
