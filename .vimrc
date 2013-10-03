@@ -10,7 +10,9 @@ let mapleader = ","
 let g:mapleader = ","
 " fast saving example
 nmap <leader>w : w!<cr>
-
+" jumping buffers
+:nnoremap <C-n> :bnext<CR>
+:nnoremap <C-p> :bprevious<CR>
 "=============
 "vim user interface
 
@@ -37,7 +39,9 @@ set lazyredraw
 set magic
 set showmatch
 set mat=2
-
+"=============
+"buffers and tabs
+set hidden
 "=============
 "color and fonts
 
@@ -114,7 +118,15 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 let g:syntastic_c_checkers =['gcc']
-                            
+
+"======
+"tmux integration
+Bundle 'christoomey/vim-tmux-navigator'
+"=====
+"bufferline
+Bundle 'bling/vim-bufferline'
+let g:bufferline_echo=0
+let g:bufferline_modified='*'
 "==================
 "some other crap
 filetype plugin indent on
