@@ -13,6 +13,7 @@ nmap <leader>w : w!<cr>
 " jumping buffers
 :nnoremap <C-n> :bnext<CR>
 :nnoremap <C-p> :bprevious<CR>
+:nnoremap <C-x> <C-W>q
 "=============
 "vim user interface
 
