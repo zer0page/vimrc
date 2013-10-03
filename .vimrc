@@ -127,7 +127,13 @@ Bundle 'christoomey/vim-tmux-navigator'
 "bufferline
 Bundle 'bling/vim-bufferline'
 let g:bufferline_echo=0
+autocmd VimEnter *
+    \ let &statusline='%{bufferline#refresh_status()}'
+    \ .bufferline#get_status_string()
 let g:bufferline_modified='*'
+let g:bufferline_active_hightlight = 'StatusLine'
+let g:bufferline_solo_hightlight = 1
+
 "=====
 "easy motion
 Bundle 'Lokaltog/vim-easymotion'
