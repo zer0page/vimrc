@@ -137,7 +137,13 @@ let g:bufferline_solo_hightlight = 1
 "=====
 "easy motion
 Bundle 'Lokaltog/vim-easymotion'
-let g:EasyMotion_leader_key = '<Leader>'
+let g:EasyMotion_leader_key = '<Leader><Leader>'
+"====
+"file browser
+Bundle 'scrooloose/nerdtree'
+noremap <Leader>n :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 "==================
 "some other crap
 filetype plugin indent on
