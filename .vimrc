@@ -21,6 +21,7 @@ set wildmenu
 set wildignore=*.o,*~,*.pyc
 
 set ruler
+set number
 set cmdheight=2
 set hid
 set backspace=eol,start,indent
@@ -100,9 +101,18 @@ let g:airline#extension#tabline#left_sep = ' '
 let g:airline#extension#tabline#left_alt_sep = '|'
 let g:airline_theme='bubblegum'
 
-
-
-"=================
+"=======
+"Syntax
+Bundle 'scrooloose/syntastic'
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+let g:syntastic_aggregate_errors=1
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_c_checkers =['gcc']
+                            
+"==================
 "some other crap
 filetype plugin indent on
 
