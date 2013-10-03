@@ -92,7 +92,18 @@ Bundle 'gmarik/vundle'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'junegunn/seoul256.vim'
 colors seoul256
+"=======
+"Lines
+Bundle 'bling/vim-airline'
+let g:airline#extension#tabline#enabled = 1
+let g:airline#extension#tabline#left_sep = ' '
+let g:airline#extension#tabline#left_alt_sep = '|'
+let g:airline_theme='bubblegum'
 
+
+
+"=================
+"some other crap
 filetype plugin indent on
 
 
