@@ -127,6 +127,10 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'bling/vim-bufferline'
 let g:bufferline_echo=0
 let g:bufferline_modified='*'
+"=====
+"easy motion
+Bundle 'Lokaltog/vim-easymotion'
+let g:EasyMotion_leader_key = '<Leader>'
 "==================
 "some other crap
 filetype plugin indent on
