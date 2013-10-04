@@ -20,7 +20,7 @@ nmap <leader>w : w!<cr>
 " 7 line JK
 set so=7
 set ttimeoutlen=50
-set showbreak=↪
+set showbreak=...
 
 set wildmenu
 set wildignore=*.o,*~,*.pyc
