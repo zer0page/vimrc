@@ -155,6 +155,10 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|pyc|swo|swp|zip)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+"===
+"Commenter
+"visual mode + c[cnmis]
+Bundle 'scrooloose/nerdcommenter'
 
 "==================
 "some other crap
