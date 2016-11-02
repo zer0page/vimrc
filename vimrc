@@ -160,6 +160,10 @@ let g:ctrlp_custom_ignore = {
 "visual mode + c[cnmis]
 Bundle 'scrooloose/nerdcommenter'
 
+"=====
+"rust
+Plugin 'rust-lang/rust.vim'
+
 "==================
 "some other crap
 filetype plugin indent on
