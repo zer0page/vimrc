@@ -104,6 +104,7 @@ hi Normal ctermbg=NONE
 "=======
 "Lines
 Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 let g:airline#extension#tabline#enabled = 1
 let g:airline#extension#tabline#left_sep = ' '
 let g:airline#extension#tabline#left_alt_sep = '|'
