@@ -7,4 +7,4 @@ if [ ! -d "$VUNDLE_DIR" ];then
     git clone http://github.com/gmarik/vundle.git "$VUNDLE_DIR"
 fi
 cp vimrc ~/.vimrc
-vim +BundleInstall +qall
+vim +BundleInstall +GoInstallBinaries +qall
