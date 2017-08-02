@@ -189,9 +189,9 @@ filetype plugin indent on
 "ctags
 "
 set tags=tags;/
-"Plugin 'craigemery/vim-autotag'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+Plugin 'craigemery/vim-autotag'
+"Plugin 'xolox/vim-misc'
+"Plugin 'xolox/vim-easytags'
 nnoremap <leader>g <C-]>
 nnoremap <leader>r <C-T>
 Plugin 'majutsushi/tagbar'
