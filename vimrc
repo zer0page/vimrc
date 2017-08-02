@@ -99,8 +99,9 @@ Bundle 'gmarik/vundle'
 "Themes
 Bundle 'flazz/vim-colorschemes'
 Bundle 'junegunn/seoul256.vim'
-colors seoul256
+colo seoul256
 hi Normal ctermbg=NONE
+"set background=dark
 "=======
 "Lines
 Bundle 'bling/vim-airline'
