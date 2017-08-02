@@ -208,7 +208,15 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 " " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 let g:neocomplcache_ctags_program = "ctags"
+let g:neocomplete#sources#tags#cache_limit_size=2000000
+" Define dictionary.
+let g:neocomplete#sources#dictionary#dictionaries = {
+            \ 'default' : '',
+            \ 'vimshell' : $HOME.'/.vimshell_hist',
+            \ 'scheme' : $HOME.'/.gosh_completions'
+            \ }
 " Recommended key-mappings.
 " " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
@@ -224,3 +232,14 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " Close popup by <Space>.
 "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javacriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+if !exists('g:neocomplete#sources#omni#input_patterns')
+    let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#ctags_command = "ctags"
+let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
