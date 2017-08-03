@@ -194,7 +194,7 @@ Plugin 'craigemery/vim-autotag'
 nnoremap <leader>g <C-]>
 nnoremap <leader>r <C-T>
 Plugin 'majutsushi/tagbar'
-nmap <leader>f :TagbarToggle<CR>
+nmap <leader>l :TagbarToggle<CR>
 
 "==================
 "neocomplete
