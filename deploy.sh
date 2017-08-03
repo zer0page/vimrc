@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-
-sudo apt-get install vim-gtk
 set -e
+sudo apt-get install -y vim-gtk cscope exuberant-ctags
 VUNDLE_DIR="$HOME/.vim/bundle/vundle"
 if [ ! -d "$VUNDLE_DIR" ];then
     echo "Cloning Vundle"
