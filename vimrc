@@ -323,6 +323,7 @@ if has("cscope")
     nmap <Leader>s :cs find s <C-R>=expand("<cword>")<CR><CR>	
     "nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>	
     "nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
+    nmap <Leader>G :cs find g <C-R>=expand("<cword>")<CR><CR>	
     "nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
     nmap <Leader>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
     "nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>	
