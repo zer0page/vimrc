@@ -378,3 +378,4 @@ endif
 "linux coding style
 Plugin 'vivien/vim-linux-coding-style'
 nnoremap <silent> <leader>ll :LinuxCodingStyle<cr>
+let g:linuxsty_patterns = [ "/kernel", "/linux" ]
