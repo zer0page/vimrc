@@ -282,7 +282,6 @@ if has("cscope")
     " show msg when any other cscope db added
     set cscopeverbose
 
-
     """"""""""""" My cscope/vim key mappings
     "
     " The following maps all invoke one of the following cscope search types:
