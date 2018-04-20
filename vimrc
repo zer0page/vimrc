@@ -282,7 +282,6 @@ if has("cscope")
     " show msg when any other cscope db added
     set cscopeverbose
 
-
     """"""""""""" My cscope/vim key mappings
     "
     " The following maps all invoke one of the following cscope search types:
@@ -378,3 +377,13 @@ endif
 "linux coding style
 Plugin 'vivien/vim-linux-coding-style'
 nnoremap <silent> <leader>ll :LinuxCodingStyle<cr>
+let g:linuxsty_patterns = [ "/kernel", "/linux" ]
+
+"==================
+"fold search
+Plugin 'embear/vim-foldsearch'
+let g:foldsearch_highlight = 1
+let g:foldsearch_disable_mappings = 1
+noremap <leader>fp :Fp \v
+noremap <leader>fl :Fl<cr>
+noremap <leader>fu zv
